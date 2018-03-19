@@ -103,3 +103,23 @@ body
 		padding-top: 0px;
 	}
 }
+
+
+ul.lista_medioambiente {
+	list-style-type: circle;
+	 list-style-position: inside;
+	 text-align: justify;
+}
+
+ul.lista_medioambiente li {
+	margin-top: 1em;
+}
+
+.enlace-cabecera {
+	color: #fdd415;
+	font-size: 13pt;
+}
+
+.enlace-cabecera:hover {
+	color: #ffffff;
+}
