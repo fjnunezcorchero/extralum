@@ -36,6 +36,9 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
+    
+    <!-- Estilos propios -->
+    <link href="css/estilo.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -85,6 +88,13 @@
                                 </div>
                             </div>
                         </div>-->
+                        <div class="col col-sm-6">
+                        	<div class="pull-right">
+                        		<img src="assets/images/bandera_es_eu.png"/>
+                        		<a href="#"><img src="assets/images/facebook-2429746_640.png" width="32"></a>
+                        		<a href="#"><img src="assets/images/linkedin-2815969_640.png" width="32"></a>
+                        	</div>
+                        </div>
                     </div>
                 </div> <!-- end container -->
             </div> <!-- end topbar -->
@@ -97,7 +107,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="index.html" class="navbar-brand"><img src="assets/images/logo.png" alt></a>
+                        <a href="index.html" class="navbar-brand"><img style="margin-right: -20px;" src="assets/images/logo.png" alt></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
                         <button class="close-navbar"><i class="fa fa-close"></i></button>
@@ -144,13 +154,10 @@
                                 </form>
                             </div>
                         </div>-->
-                         
-                        <div class="social">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
+                        
+                        <div class="social" style="margin-top: -4px;">
+                        	<a class="enlace-cabecera pull-right" href="contacto.html">&Uacute;nete a nosotros</a>
+                            
                         </div>
                         
                     </div>
@@ -194,16 +201,26 @@
                         <div class="contact-form"> 
                             <form method="post" id="contact-form-s2" class="form row contact-validation-active">
                                 <div class="col col-xs-12">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
                                 </div>
                                 <div class="col col-xs-12">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email address">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Correo elctronico">
                                 </div>
                                 <div class="col col-xs-12">
-                                    <input type="text" class="form-control" id="location" name="location" placeholder="Your location">
+                                    <input type="text" class="form-control" id="location" name="location" placeholder="Localizacion">
                                 </div>
                                 <div class="col col-xs-12">
-                                    <textarea class="form-control" name="message" placeholder="Write.."></textarea>
+                                	<select class="form-control" name="departamento" id="departamento">
+                                		<option value="0">Elija el departamento al que se dirije</option>
+                                		<option value="1">Administraci&oacute;n</option>
+                                		<option value="2">Contabilidad</option>
+                                		<option value="3">Departamento Comercial</option>
+                                		<option value="4">Producci&oacute;n</option>
+                                		<option value="5">Compras</option>
+                                	</select>
+                                </div>
+                                <div class="col col-xs-12">
+                                    <textarea class="form-control" name="message" placeholder="Comentario.."></textarea>
                                 </div>
                                 <div class="col col-xs-12 submit-btn">
                                     <button type="submit">Submit</button>
@@ -273,11 +290,8 @@
                             <div class="footer-social">
                                 <span>Siguenos en: </span>
                                 <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-rss-square"></i></a></li>
+                                    <li><a href="#"><img src="assets/images/facebook-2429746_640.png" width="32"></a></li>
+                                    <li><a href="#"><img src="assets/images/linkedin-2815969_640.png" width="32"></a></li>
                                 </ul>
                             </div>
                         </div>

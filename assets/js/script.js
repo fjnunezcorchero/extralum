@@ -597,12 +597,12 @@
     function map() {
 
         var locations = [
-            ['Extralum', 37.027535, -4.535685,1]
+            ['Extralum', 37.031664, -4.534581,1]
         ];
 
         var map = new google.maps.Map(document.getElementById('map'), {
-            center: new google.maps.LatLng( 37.027535, -4.535685),
-            zoom: 18,
+            center: new google.maps.LatLng( 37.031664, -4.534581),
+            zoom: 16,
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
 
