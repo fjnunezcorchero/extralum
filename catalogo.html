@@ -8,7 +8,7 @@
     <meta name="author" content="themexriver">
 
     <!-- Page Title -->
-    <title> Extralum - Desarrollo/Asesoramiento </title>
+    <title> Extralum - Cat&aacute;logo </title>
 
     <!-- Favicon and Touch Icons -->
     <link href="assets/images/favicon/favicon.png" rel="shortcut icon" type="image/png">
@@ -170,66 +170,78 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <h2>Desarrollo/Asesoramiento</h2>
+                        <h2>Cat&aacute;logo</h2>
                         <ol class="breadcrumb">
                             <li><a href="index.html">Inicio</a></li>
-                            <li>Desarrollo/Asesoramiento</li>
+                            <li>Cat&aacute;logo</li>
                         </ol>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </section>        
         <!-- end page-title -->
-
-
-        <!-- start service-single-section -->
-        <section class="service-single-section section-padding">
+        
+        <!-- start contact-section -->
+        <section class="contact-section section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col col-md-8 col-md-push-4">
-                        <div class="service-single-content">
-                            <h3>Desarrollo/Asesoramiento</h3>
-                            <p></p>
-                            <div class="img-holder">
-                                <img src="assets/images/service-single/img-5.jpg" alt>
-                            </div>
-                            <div>
-                            	<div style="margin: 2em;">
-									<p>Deste nuestro Dpto de desarrollo, asesoramos a nuestros clientes sobre el dise&ntilde;o y procesos de nuestros productos, dando as&iacute; un servicio de calidad a todos sus proyectos.</p>
-									<p>Si necesita ayuda para el desarrollo de cualquier soluci&oacute;n para su empresa, no dude en entrar en contacto con nosotros.</p>
-	                            </div>
-
-                            </div> <!-- end discussion-faq -->
-                        </div> <!-- end service-single-content -->
-                    </div> <!-- end col -->
-                    <div class="col col-md-4 col-md-pull-8">
-                        <div class="service-sidebar">
-                            <div class="widget link-widget">
-                                <ul>
-                                    <li><a href="#">Nuestra Actividad</a></li>
-                                    <li><a href="extrusion.html">Extrusi&oacute;n</a></li>
-                                    <li><a href="lacado.html">Lacado</a></li>
-                                    <li><a href="anodizado.html">Anodizado</a></li>
-                                    <li><a href="mecanizado.html">Mecanizado</a></li>
-                                    <li class="active"><a href="desarrollo.html">Desarrollo/Asesoramiento</a></li>
-                                </ul>
-                            </div>
-                            <div class="widget contact-widget">
-                                <h3>Contact</h3>
-                                <ul>
-                                    <li><i class="fa fa-location-arrow"></i> Po. Ind. C/ Cueva de la Viera 29200 Antequera (M&aacute;laga)</li>
-                                    <li><i class="fa fa-phone"></i> +34 951 90 20 12 <br></li>
-                                    <li><i class="fa fa-envelope"></i> acasal@extralum.es</li>
-                                </ul>
-                            </div>
-                            
+                    <div class="col col-md-6">
+                        <div class=""><img src="assets/images/projects/img-3.jpg"></div>
+                    </div>
+                    <div class="col col-md-6">
+                        <div class="section-title-s4">
+                            <h2>Solicite un cat&aacute;logo</h2>
+                            <p>Pongase en contacto con nosotros para solicitar un cat&aacute;logo.</p>
+                        </div>
+                        <div class="contact-form">
+                            <form method="post" id="contact-form" class="form row contact-validation-active">
+                                <div class="col col-sm-6">
+                                    <label for="name">Nombre completo</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                </div>
+                                <div class="col col-sm-6">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                </div>
+                                <div class="col col-sm-6">
+                                    <label for="phone">Tel&eacute;fono</label>
+                                    <input type="text" class="form-control" id="phone" name="phone">
+                                </div>
+                                <div class="col col-sm-6">
+                                	<label for="departamento">Departamento</label>
+                                	<select class="form-control" id="departamento" name="departamento">
+                                		<option value="0">Elija el departamento a contactar</option>
+                                		<option value="1">Administraci&oacute;n</option>
+                                		<option value="2">Contabilidad</option>
+                                		<option value="3">Departamento Comercial</option>
+                                		<option value="4">Producci&oacute;n</option>
+                                		<option value="5">Compras</option>
+                                	</select>
+                                </div>
+                                <div class="col col-sm-12">
+                                	<textarea class="form-control" name="message" placeholder="Comentario.." rows="6"></textarea>
+                                </div>
+                                <div class="col col-sm-6">
+                                    
+                                </div>
+                                <div class="col col-xs-12 submit-btn">
+                                    <button type="submit">Enviar</button>
+                                    <div id="loader">
+                                        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                                    </div>
+                                </div>
+                                <div class="error-handling-messages">
+                                    <div id="success">Gracias</div>
+                                    <div id="error"> Ha ocurrido un error enviado el correo. Por favor int&eacute;ntelo mas tarde. </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </section>
-        <!-- end service-single-section -->
-
+        <!-- end contact-section -->
+        
         <!-- start site-footer -->
         <footer class="site-footer">
             <div class="upper-footer">

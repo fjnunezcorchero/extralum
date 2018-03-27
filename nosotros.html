@@ -112,7 +112,7 @@
                     <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
                         <button class="close-navbar"><i class="fa fa-close"></i></button>
                         <ul class="nav navbar-nav">
-                            <li><a href="index.html">Home</a></li>
+                            <!-- <li><a href="index.html">Home</a></li>-->
                             <li><a href="nosotros.html">Nosotros</a></li>
                             <li class="menu-item-has-children">
                                 <a href="#">Actividad</a>
@@ -124,8 +124,6 @@
                                     <li><a href="desarrollo.html">Desarrollo/Asesoramiento</a></li>
                                 </ul>
                             </li>
-                            <li><a href="valores.html">Valores</a></li>
-                            <li><a href="medioambiente.html">Medioambiente</a></li>
                             <li class="menu-item-has-children">
                                 <a href="#">Sectores</a>
                                 <ul class="sub-menu">
@@ -135,11 +133,11 @@
                                     <li><a href="industria-electrica.html">Industria El&eacute;ctrica</a></li>
                                     <li><a href="decoracion.html">Decoraci&oacute;n</a></li>
                                     <li><a href="automacion.html">Automoci&oacute;n</a></li>
-                                    <li><a href="agricultura.html">Agricultura</a></li>
+                                    
                                 </ul>
                             </li>
-                            <!-- <li><a href="comercial.html">Comercial</a></li>-->
-                            <!-- <li><a href="unete.html">&Uacute;nete a nosotr</a></li>-->
+                            <li><a href="medioambiente.html">Medioambiente</a></li>
+                            <li><a href="catalogo.html">Cat&aacute;logo</a></li>
                             <li><a href="contacto.html">Contacto</a></li>
                         </ul>
                     </div><!-- end of nav-collapse -->
@@ -347,13 +345,13 @@
                     </div>
                     <div class="col col-md-6">
                         <div class="section-title-s4">
-                            <h2>Request a call back</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua.</p>
+                            <h2>Contacte con nosotros</h2>
+                            <p>Pongase en contacto con nosotros rellenando este formulario.</p>
                         </div>
                         <div class="contact-form">
                             <form method="post" id="contact-form" class="form row contact-validation-active">
                                 <div class="col col-sm-6">
-                                    <label for="name">Full Name</label>
+                                    <label for="name">Nombre</label>
                                     <input type="text" class="form-control" id="name" name="name">
                                 </div>
                                 <div class="col col-sm-6">
@@ -361,27 +359,32 @@
                                     <input type="email" class="form-control" id="email" name="email">
                                 </div>
                                 <div class="col col-sm-6">
-                                    <label for="phone">Phone No</label>
+                                    <label for="phone">Tel&eacute;fono</label>
                                     <input type="text" class="form-control" id="phone" name="phone">
                                 </div>
                                 <div class="col col-sm-6">
-                                    <label for="business">Business Type</label>
-                                    <select name="business" id="business" class="form-control">
-                                        <option selected disabled>Select one</option>
-                                        <option>Select number 1</option>
-                                        <option>Select number 2</option>
-                                        <option>Select number 3</option>
+                                    <label for="departamento">Departamento</label>
+                                    <select name="departamento" id="departamento" class="form-control">
+                                        <option value="0">Elija el departamento a contactar</option>
+                                		<option value="1">Administraci&oacute;n</option>
+                                		<option value="2">Contabilidad</option>
+                                		<option value="3">Departamento Comercial</option>
+                                		<option value="4">Producci&oacute;n</option>
+                                		<option value="5">Compras</option>
                                     </select>
                                 </div>
+                                <div class="col col-sm-12">
+                                	<textarea class="form-control" name="message" placeholder="Comentario.." rows="6"></textarea>
+                                </div>
                                 <div class="col col-xs-12 submit-btn">
-                                    <button type="submit">Submit</button>
+                                    <button type="submit">Enviar</button>
                                     <div id="loader">
                                         <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
                                     </div>
                                 </div>
                                 <div class="error-handling-messages">
-                                    <div id="success">Thank you</div>
-                                    <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                    <div id="success">Gracias</div>
+                                    <div id="error"> Ha ocurrido un error enviado el correo. Por favor int&eacute;ntelo mas tarde. </div>
                                 </div>
                             </form>
                         </div>
@@ -408,18 +411,38 @@
                             </div>
                         </div>
 
-                        <div class="col col-md-offset-4 col-md-3 col-sm-6">
+                        <div class="col col-md-3">
+                        	<div class="row">
+                        		<div class="col-md-8 col-md-offset-4">
+                        			<img src="assets/images/reciclaje1.jpg">
+                        		</div>
+                        		<div class="col-md-8">&nbsp;</div>
+                        	</div>
+                        	<div class="row">
+                        		<div class="col-md-8 col-md-offset-4">
+                        			<img src="assets/images/reciclaje2.jpg">
+                        		</div>
+                        		<div class="col-md-8">&nbsp;</div>
+                        	</div>
+                        	<div class="row">
+                        		<div class="col-md-8 col-md-offset-4">
+                        			<img src="assets/images/reciclaje3.jpg">
+                        		</div>
+                        		<div class="col-md-8">&nbsp;</div>
+                        	</div>
+                        </div>
+                        
+                        <div class="col col-md-offset-2 col-md-3 col-sm-6">
                             <div class="widget links-widget">
                                 <h3>Links</h3>
                                 <ul>
                                     <li><a href="index.html">Inicio</a></li>
                                     <li><a href="nosotros.html">Sobre nosotros</a></li>
                                     <li><a href="extrusion.html">Nuestra actividad</a></li>
-                                    <li><a href="valores.html">Nuestros valores</a></li>
-                                    <li><a href="medioambiente.html">Compromiso medioambiental</a></li>
                                     <li><a href="naval.html">Sectores</a></li>
-                                    <li><a href="contacto.html">Contacto comercial</a></li>
+                                    <li><a href="medioambiente.html">Compromiso medioambiental</a></li>
                                     <li><a href="contacto.html">&Uacute;nete a nosotros</a></li>
+                                    <li><a href="catalogo.html">Cat&aacute;logo</a></li>
                                     <li><a href="contacto.html">Contacto/Ubicaci&oacute;n</a></li>
                                 </ul>
                             </div>
@@ -466,7 +489,7 @@
     <script src="assets/js/jquery-plugin-collection.js"></script>
 
     <!-- Google map api -->
-    <script src="https://maps.googleapis.com/maps/api/js?key"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc2Np8jX7FwLkzh4QCv4Aps2KZhhlTVdQ" async defer></script>
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
