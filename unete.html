@@ -8,7 +8,7 @@
     <meta name="author" content="themexriver">
 
     <!-- Page Title -->
-    <title> Extralum - Desarrollo/Asesoramiento </title>
+    <title> Extralum - &Uacute;nete a nosotros</title>
 
     <!-- Favicon and Touch Icons -->
     <link href="assets/images/favicon/favicon.png" rel="shortcut icon" type="image/png">
@@ -48,7 +48,7 @@
 
 </head>
 
-<body class="service-single-pg">
+<body class="contact-pg">
 
     <!-- start page-wrapper -->
     <div class="page-wrapper">
@@ -163,73 +163,72 @@
             </nav>
         </header>
         <!-- end of header -->
-
-
+        
         <!-- start page-title -->
         <section class="page-title">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <h2>Desarrollo/Asesoramiento</h2>
+                        <h2>&Uacute;nete a nosotros</h2>
                         <ol class="breadcrumb">
                             <li><a href="index.html">Inicio</a></li>
-                            <li>Desarrollo/Asesoramiento</li>
+                            <li>&Uacute;nete a nosotros</li>
                         </ol>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </section>        
         <!-- end page-title -->
-
-
-        <!-- start service-single-section -->
-        <section class="service-single-section section-padding">
+        
+        <!-- start contact-pg-content -->
+        <section class="contact-pg-content section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col col-md-8 col-md-push-4">
-                        <div class="service-single-content">
-                            <h3>Desarrollo/Asesoramiento</h3>
-                            <p></p>
-                            <div class="img-holder">
-                                <img src="assets/images/service-single/img-5.jpg" alt>
-                            </div>
-                            <div>
-                            	<div style="margin: 2em;">
-									<p>Deste nuestro Dpto de desarrollo, asesoramos a nuestros clientes sobre el dise&ntilde;o y procesos de nuestros productos, dando as&iacute; un servicio de calidad a todos sus proyectos.</p>
-									<p>Si necesita ayuda para el desarrollo de cualquier soluci&oacute;n para su empresa, no dude en entrar en contacto con nosotros.</p>
-	                            </div>
-
-                            </div> <!-- end discussion-faq -->
-                        </div> <!-- end service-single-content -->
-                    </div> <!-- end col -->
-                    <div class="col col-md-4 col-md-pull-8">
-                        <div class="service-sidebar">
-                            <div class="widget link-widget">
-                                <ul>
-                                    <li><a href="#">Nuestra Actividad</a></li>
-                                    <li><a href="extrusion.html">Extrusi&oacute;n</a></li>
-                                    <li><a href="lacado.html">Lacado</a></li>
-                                    <li><a href="anodizado.html">Anodizado</a></li>
-                                    <li><a href="mecanizado.html">Mecanizado</a></li>
-                                    <li class="active"><a href="desarrollo.html">Desarrollo/Asesoramiento</a></li>
-                                </ul>
-                            </div>
-                            <div class="widget contact-widget">
-                                <h3>Contact</h3>
-                                <ul>
-                                    <li><i class="fa fa-location-arrow"></i> Po. Ind. C/ Cueva de la Viera 29200 Antequera (M&aacute;laga)</li>
-                                    <li><i class="fa fa-phone"></i> +34 951 90 20 12 <br></li>
-                                    <li><i class="fa fa-envelope"></i> info@extralum.es</li>
-                                </ul>
-                            </div>
+                    <div class="col col-md-8 col-md-offset-2">
+                        <div class="section-title-s3">
+                            <h2>&Uacute;nete a nosotros</h2>
                             
+                        </div>
+                    </div>
+                </div>                
+                <div class="row">
+                    <div class="col col-md-6">
+                    	<!-- <div class="contact-location-map" id="map"></div> -->
+                        <div class=""><img src="assets/images/tarjeta.png"></div>
+                    </div>
+                    <div class="col col-md-6">
+                        <div class="contact-form"> 
+                            <form method="post" id="contact-form-s2" class="form row contact-validation-active" action="mailto:fjnunezcorchero@gmail.com">
+                                <div class="col col-xs-12">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                                </div>
+                                <div class="col col-xs-12">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Correo elctronico">
+                                </div>
+                                <div class="col col-xs-12">
+                                    <input type="text" class="form-control" id="location" name="location" placeholder="Localizacion">
+                                </div>
+                                <div class="col col-xs-12">
+                                    <textarea class="form-control" name="message" placeholder="Comentario.."></textarea>
+                                </div>
+                                <div class="col col-xs-12 submit-btn">
+                                    <button type="submit">Enviar</button>
+                                    <div id="loader">
+                                        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                                    </div>
+                                </div>
+                                <div class="error-handling-messages">
+                                    <div id="success">Gracias</div>
+                                    <div id="error"> Ha ocurrido un error enviado el correo. Por favor int&eacute;ntelo mas tarde. </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </section>
-        <!-- end service-single-section -->
-
+        <!-- end contact-pg-content -->
+        
         <!-- start site-footer -->
         <footer class="site-footer">
             <div class="upper-footer">
@@ -323,6 +322,9 @@
 
     <!-- Plugins for this template -->
     <script src="assets/js/jquery-plugin-collection.js"></script>
+
+    <!-- Google map api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc2Np8jX7FwLkzh4QCv4Aps2KZhhlTVdQ" async defer></script>
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
