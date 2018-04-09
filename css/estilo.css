@@ -116,10 +116,22 @@ ul.lista_medioambiente li {
 }
 
 .enlace-cabecera {
-	color: #fdd415;
+	color: #ffffff;
 	font-size: 13pt;
+	font-weight: bold;
+	margin-left: 1em;
+	margin-top: 0.5em;
 }
 
 .enlace-cabecera:hover {
 	color: #ffffff;
+}
+
+.topbar {
+	background-color: #3763d0 !important;
+}
+
+.upper-footer {
+	/*background-color: #ffffff !important;*/
+}
 }
