@@ -193,7 +193,10 @@
                             <p>Pongase en contacto con nosotros para solicitar un cat&aacute;logo.</p>
                         </div>
                         <div class="contact-form">
-                            <form method="post" id="contact-form" class="form row contact-validation-active">
+                            <form method="post" id="contact-form-s2" class="form row contact-validation-active">
+                            <input type="hidden" name="formulario" id="formulario" value="catalogo">
+                            <input type="hidden" name="location" id="location" value="">
+                            <input type="hidden" name="departamento" id="departamento" value="">
                                 <div class="col col-sm-6">
                                     <label for="name">Nombre completo</label>
                                     <input type="text" class="form-control" id="name" name="name">
@@ -211,7 +214,7 @@
                                 	<input type="text" class="form-control" id="empresa" name="empresa">
                                 </div>
                                 <div class="col col-sm-12">
-                                	<textarea class="form-control" name="message" placeholder="Comentario.." rows="6"></textarea>
+                                	<textarea class="form-control" name="message" id="message" placeholder="Comentario.." rows="6"></textarea>
                                 </div>
                                 <div class="col col-sm-6">
                                     
@@ -223,7 +226,7 @@
                                     </div>
                                 </div>
                                 <div class="error-handling-messages">
-                                    <div id="success">Gracias</div>
+                                    <div id="success">Gracias por contactar con nostros</div>
                                     <div id="error"> Ha ocurrido un error enviado el correo. Por favor int&eacute;ntelo mas tarde. </div>
                                 </div>
                             </form>

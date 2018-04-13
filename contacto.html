@@ -198,6 +198,10 @@
                     <div class="col col-md-6">
                         <div class="contact-form"> 
                             <form method="post" id="contact-form-s2" class="form row contact-validation-active" action="mailto:fjnunezcorchero@gmail.com">
+                            <input type="hidden" name="formulario" id="formulario" value="contacto">
+                            <input type="hidden" name="phone" id="phone" value="">
+                            <input type="hidden" name="empresa" id="empresa" value="">
+                            <input type="hidden" name="location" id="location" value="">
                                 <div class="col col-xs-12">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
                                 </div>
@@ -205,7 +209,7 @@
                                     <input type="email" class="form-control" id="email" name="email" placeholder="Correo elctronico">
                                 </div>
                                 <div class="col col-xs-12">
-                                    <input type="text" class="form-control" id="location" name="location" placeholder="Localizacion">
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefono">
                                 </div>
                                 <div class="col col-xs-12">
                                 	<select class="form-control" name="departamento" id="departamento">
@@ -218,7 +222,7 @@
                                 	</select>
                                 </div>
                                 <div class="col col-xs-12">
-                                    <textarea class="form-control" name="message" placeholder="Comentario.."></textarea>
+                                    <textarea class="form-control" name="message" id="message" placeholder="Comentario.."></textarea>
                                 </div>
                                 <div class="col col-xs-12 submit-btn">
                                     <button type="submit">Enviar</button>
@@ -227,7 +231,7 @@
                                     </div>
                                 </div>
                                 <div class="error-handling-messages">
-                                    <div id="success">Gracias</div>
+                                    <div id="success">Gracias por contactar con nostros</div>
                                     <div id="error"> Ha ocurrido un error enviado el correo. Por favor int&eacute;ntelo mas tarde. </div>
                                 </div>
                             </form>

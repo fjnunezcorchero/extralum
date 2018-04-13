@@ -350,7 +350,10 @@
                             <p>Pongase en contacto con nosotros rellenando este formulario.</p>
                         </div>
                         <div class="contact-form">
-                            <form method="post" id="contact-form" class="form row contact-validation-active">
+                            <form method="post" id="contact-form-s2" class="form row contact-validation-active">
+                            <input type="hidden" name="formulario" id="formulario" value="contacto">
+                            <input type="hidden" name="empresa" id="empresa" value="">
+                            <input type="hidden" name="location" id="location" value="">
                                 <div class="col col-sm-6">
                                     <label for="name">Nombre</label>
                                     <input type="text" class="form-control" id="name" name="name">
@@ -375,7 +378,7 @@
                                     </select>
                                 </div>
                                 <div class="col col-sm-12">
-                                	<textarea class="form-control" name="message" placeholder="Comentario.." rows="6"></textarea>
+                                	<textarea class="form-control" name="message" id="message" placeholder="Comentario.." rows="6"></textarea>
                                 </div>
                                 <div class="col col-xs-12 submit-btn">
                                     <button type="submit">Enviar</button>
@@ -384,7 +387,7 @@
                                     </div>
                                 </div>
                                 <div class="error-handling-messages">
-                                    <div id="success">Gracias</div>
+                                    <div id="success">Gracias por contactar con nostros</div>
                                     <div id="error"> Ha ocurrido un error enviado el correo. Por favor int&eacute;ntelo mas tarde. </div>
                                 </div>
                             </form>

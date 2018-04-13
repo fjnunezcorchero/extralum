@@ -697,36 +697,48 @@
                 },
 
                 location: "required",
-
+                phone: "required",
+                empresa: "required",
+                departamento: "required",
             },
 
             messages: {
-                name: "Please enter your name",
-                email: "Please enter your email",
-                location: "Please enter your location",
+                name: "Por favor introduzca su nombre",
+                email: "Por favor introduzca su correo",
+                location: "Por favor introduzca su localizacion",
+                phone: "Por favor introduzca su telefono",
+                empresa: "Por favor introduzca su empresa",
+                departamento: "Por favor elija un departamento",
             },
 
             submitHandler: function (form) {
-                $.ajax({
-                    type: "POST",
-                    url: "mail-2.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $( "#loader").hide();
-                        $( "#success").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
-                        }, 3000);
-                        form.reset();
-                    },
-                    error: function() {
-                        $( "#loader").hide();
-                        $( "#error").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
-                        }, 3000);
-                    }
-                });
+            	$.post("mail-2.php", 
+            			{accion: $('#formulario').val(), 
+            			nombre: $('#name').val(),
+            			correo: $('#email').val(),
+            			telefono: $('#phone').val(),
+            			localizacion: $('#location').val(),
+            			mensaje: $('#message').val(),
+            			departamento: $('#departamento').val(),
+            			empresa: $('#empresa').val()}, 
+            			function(result) {
+            				if(result == "true") {
+            					$( "#loader").hide();
+    	                        $( "#success").slideDown( "slow" );
+    	                        setTimeout(function() {
+    	                        $( "#success").slideUp( "slow" );
+    	                        }, 3000);
+    	                        form.reset();
+            				}
+            				else
+            					{
+            					$( "#loader").hide();
+                                $( "#error").slideDown( "slow" );
+                                setTimeout(function() {
+                                $( "#error").slideUp( "slow" );
+                                }, 3000);
+            					}
+            			});
                 return false; // required to block normal submit since you used ajax
             }
 
