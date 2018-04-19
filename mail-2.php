@@ -77,8 +77,8 @@ switch ($_POST['accion']) {
         </html>';
     break;
 }
-$to = 'fjnunezcochero@gmail.com';
-$headers = 'From: <mailer@progressive.itembridge.com>' . "\r\n" . 'Content-type: text/html; charset=utf-8';
+$to = 'acasal@extralum.es';
+$headers = 'Content-type: text/html; charset=utf-8';
 
 /*
 setLog('to: '.$to);
