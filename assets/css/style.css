@@ -2721,7 +2721,7 @@ img {
 }
 
 .header-style-1 .topbar .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn), .header-style-2 .topbar .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn), .header-style-3 .topbar .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn), .header-style-4 .topbar .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn), .header-style-5 .topbar .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn), .header-style-6 .topbar .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-  width: 65px;
+  width: 100px;
 }
 
 .header-style-1 .topbar .bootstrap-select > .btn, .header-style-2 .topbar .bootstrap-select > .btn, .header-style-3 .topbar .bootstrap-select > .btn, .header-style-4 .topbar .bootstrap-select > .btn, .header-style-5 .topbar .bootstrap-select > .btn, .header-style-6 .topbar .bootstrap-select > .btn {

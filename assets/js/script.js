@@ -1,6 +1,14 @@
 (function($) {
 
 	"use strict";
+	
+	$(document).ready(function() {
+		   $('.selectpicker').selectpicker();
+	});
+	
+	$('#language-select').on('change', function(){
+		window.location.href = window.location.href.substr(window.location.href.lastIndexOf('/') + 1)+"?lan="+$(this).val();
+	});
 
 
     /*------------------------------------------
