@@ -1,0 +1,40 @@
+setSesion(1)
+desactivaTodasSesiones(1)
+UPDATE t_seguridad_sesion SET estado = 0 WHERE id_usuario = 1
+esUnica(54615054798B9067539CB5590ACA15038253B6A89BC201C991)
+SELECT * FROM t_seguridad_sesion WHERE id_sesion = '54615054798B9067539CB5590ACA15038253B6A89BC201C991'
+INSERT INTO t_seguridad_sesion (id_sesion, id_usuario, fecha_entrada,
+	      estado, fecha_limite) VALUES ('54615054798B9067539CB5590ACA15038253B6A89BC201C991', 1, '2018-04-26 11:14:53', 1, '2018-04-26 11:44:53')
+setSesion(1)
+desactivaTodasSesiones(1)
+UPDATE t_seguridad_sesion SET estado = 0 WHERE id_usuario = 1
+esUnica(0A4B6420B43594A0CA4746684357C3943CCB864724A9382CC3)
+SELECT * FROM t_seguridad_sesion WHERE id_sesion = '0A4B6420B43594A0CA4746684357C3943CCB864724A9382CC3'
+INSERT INTO t_seguridad_sesion (id_sesion, id_usuario, fecha_entrada,
+	      estado, fecha_limite) VALUES ('0A4B6420B43594A0CA4746684357C3943CCB864724A9382CC3', 1, '2018-04-26 11:19:01', 1, '2018-04-26 11:49:01')
+setSesion(1)
+desactivaTodasSesiones(1)
+UPDATE t_seguridad_sesion SET estado = 0 WHERE id_usuario = 1
+esUnica(6B6642A83C03156AA84A73B447BCC2594AB798420221931262)
+SELECT * FROM t_seguridad_sesion WHERE id_sesion = '6B6642A83C03156AA84A73B447BCC2594AB798420221931262'
+INSERT INTO t_seguridad_sesion (id_sesion, id_usuario, fecha_entrada,
+	      estado, fecha_limite) VALUES ('6B6642A83C03156AA84A73B447BCC2594AB798420221931262', 1, '2018-04-26 11:20:00', 1, '2018-04-26 11:50:00')
+setSesion(1)
+desactivaTodasSesiones(1)
+UPDATE t_seguridad_sesion SET estado = 0 WHERE id_usuario = 1
+esUnica(C6B6856A71260CB5553686B74327714129A4381BA54347843A)
+SELECT * FROM t_seguridad_sesion WHERE id_sesion = 'C6B6856A71260CB5553686B74327714129A4381BA54347843A'
+INSERT INTO t_seguridad_sesion (id_sesion, id_usuario, fecha_entrada,
+	      estado, fecha_limite) VALUES ('C6B6856A71260CB5553686B74327714129A4381BA54347843A', 1, '2018-04-26 11:20:56', 1, '2018-04-26 11:50:56')
+SELECT * FROM t_seguridad_usuario WHERE nombre_usuario = 'p11@correo.es' AND
+		pass_usuario = 'c40P4tIdkTufY' AND activo = 1 AND intentos > 0 AND fecha_baja IS NULL
+SELECT * FROM t_seguridad_usuario WHERE nombre_usuario = 'fjnunez@yahoo.com' AND
+		pass_usuario = 'd0bjYJK3eGoyI' AND activo = 1 AND intentos > 0 AND fecha_baja IS NULL
+SELECT * FROM t_seguridad_usuario WHERE nombre_usuario = 'p11@correo.es' AND
+		pass_usuario = 'c40P4tIdkTufY' AND activo = 1 AND intentos > 0 AND fecha_baja IS NULL
+SELECT * FROM t_seguridad_usuario WHERE nombre_usuario = 'p11@correo.es' AND
+		pass_usuario = 'c40P4tIdkTufY' AND activo = 1 AND intentos > 0 AND fecha_baja IS NULL
+SELECT * FROM t_seguridad_usuario WHERE nombre_usuario = 'p11@correo.es' AND
+		pass_usuario = 'c40P4tIdkTufY' AND activo = 1 AND intentos > 0 AND fecha_baja IS NULL
+SELECT * FROM t_seguridad_usuario WHERE nombre_usuario = 'fjnunez@yahoo.com' AND
+		pass_usuario = 'd0bjYJK3eGoyI' AND activo = 1 AND intentos > 0 AND fecha_baja IS NULL
