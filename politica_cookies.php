@@ -101,6 +101,7 @@ include('assets/include/config.php');
                             	<li><?php echo $texto['politica_cookies_cookie_2']; ?></li>
                             	<li><?php echo $texto['politica_cookies_cookie_3']; ?></li>
                             </ul>
+                            <br/>
                             <p><?php echo $texto['politica_cookies_texto_3']; ?></p>
                             <p><?php echo $texto['politica_cookies_texto_4']; ?></p>
                         </div> <!-- end service-single-content -->
