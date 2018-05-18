@@ -60,10 +60,10 @@ include('assets/include/config.php');
     <!-- COOKIES -->
     <div class="alert alert-dismissible text-center cookiealert" role="alert">
         <div class="cookiealert-container">
-            <b>Uso de cookies</b> Utilizamos cookies propias y de terceros para mejorar nuestros servicios. <a href="politica_cookies.php" target="_blank">Ver politica de cookies</a>
+            <b><?php echo $texto['titulo_aviso']; ?></b> <?php echo $texto['texto_aviso']; ?> <a href="politica_cookies.php" target="_blank"><?php echo $texto['texto_enlace']; ?></a>
     
             <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
-                Acepto
+                <?php echo $texto['aceptar']; ?>
             </button>
         </div>
     </div>

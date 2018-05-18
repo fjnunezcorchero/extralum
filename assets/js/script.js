@@ -7,7 +7,7 @@
 	});
 	
 	$('#language-select').on('change', function(){
-		window.location.href = window.location.href.substr(window.location.href.lastIndexOf('/') + 1)+"?lan="+$(this).val();
+		window.location.href = window.location.href.substr(window.location.href.lastIndexOf('/') + 1).split('?')[0]+"?lan="+$(this).val();
 	});
 
 
