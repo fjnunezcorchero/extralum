@@ -4,7 +4,7 @@ include('assets/include/config.php');
 <!DOCTYPE html>
 <html lang="<?php echo $language; ?>">
 <head>
-	<?php include('google_analytics.php'); ?>
+	<?php include('assets/include/google_analytics.php'); ?>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
