@@ -12,7 +12,7 @@ include('assets/include/config.php');
     <meta name="author" content="themexriver">
 
     <!-- Page Title -->
-    <title> Extralum - <?php echo $texto['servicio_anodizado']; ?> </title>
+    <title> Extralum - <?php echo $texto['politica_cookies']; ?></title>
 
     <!-- Favicon and Touch Icons -->
     <link href="assets/images/favicon/favicon.png" rel="shortcut icon" type="image/png">
@@ -52,7 +52,7 @@ include('assets/include/config.php');
 
 </head>
 
-<body class="service-single-pg">
+<body>
 
     <!-- start page-wrapper -->
     <div class="page-wrapper">
@@ -68,7 +68,7 @@ include('assets/include/config.php');
             </div>
         </div>
         <!-- end preloader -->
-        
+
         <?php include('assets/include/header.php'); ?>
         
         <!-- start page-title -->
@@ -76,71 +76,47 @@ include('assets/include/config.php');
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <h2><?php echo $texto['servicio_anodizado']; ?></h2>
+                        <h2><?php echo $texto['politica_cookies']; ?></h2>
                         <ol class="breadcrumb">
                             <li><a href="index.php"><?php echo $texto['menu_cabecera_inicio']; ?></a></li>
-                            <li><?php echo $texto['servicio_anodizado']; ?></li>
+                            <li><?php echo $texto['politica_cookies']; ?></li>
                         </ol>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </section>        
         <!-- end page-title -->
-		
+        
         <!-- start service-single-section -->
         <section class="service-single-section section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col col-md-8 col-md-push-4">
+                    <div class="col col-md-10 col-md-push-2">
                         <div class="service-single-content">
-                            <h3><?php echo $texto['anodizado_cabecera']; ?></h3>
-                            <p></p>
-                            <div class="img-holder">
-                                <img src="assets/images/service-single/img-3.jpg">
-                            </div>
-                            <div>
-                            	<div style="margin: 2em;">
-									<p><?php echo $texto['anodizado_texto_1']; ?></p>
-	                                <p><?php echo $texto['anodizado_texto_2']; ?></p>
-	                                <p><?php echo $texto['anodizado_texto_3']; ?></p>
-	                                <p><?php echo $texto['anodizado_texto_4']; ?></p>
-	                            </div>
-
-                            </div> <!-- end discussion-faq -->
+                            <h3><?php echo $texto['politica_cookies']; ?></h3>
+                            <p><?php echo $texto['politica_cookies_texto_1']; ?></p>
+                            <p><?php echo $texto['politica_cookies_texto_2']; ?></p>
+                            <ul class="lista_medioambiente">
+                            	<li><?php echo $texto['politica_cookies_cookie_1']; ?></li>
+                            	<li><?php echo $texto['politica_cookies_cookie_2']; ?></li>
+                            	<li><?php echo $texto['politica_cookies_cookie_3']; ?></li>
+                            </ul>
+                            <p><?php echo $texto['politica_cookies_texto_3']; ?></p>
+                            <p><?php echo $texto['politica_cookies_texto_4']; ?></p>
                         </div> <!-- end service-single-content -->
                     </div> <!-- end col -->
-                    <div class="col col-md-4 col-md-pull-8">
-                        <div class="service-sidebar">
-                            <div class="widget link-widget">
-                                <ul>
-                                    <li><a href="#"><?php echo $texto['inicio_seccion_actividad']; ?></a></li>
-                                    <li><a href="extrusion.php"><?php echo $texto['servicio_extrusion']; ?></a></li>
-                                    <li><a href="lacado.php"><?php echo $texto['servicio_lacado']; ?></a></li>
-                                    <li class="active"><a href="anodizado.php"><?php echo $texto['servicio_anodizado']; ?></a></li>
-                                    <li><a href="mecanizado.php"><?php echo $texto['servicio_mecanizado']; ?></a></li>
-                                    <li><a href="desarrollo.php"><?php echo $texto['servicio_desarrollo']; ?></a></li>
-                                </ul>
-                            </div>
-                            <div class="widget contact-widget">
-                                <h3><?php echo $texto['menu_cabecera_contacto']; ?></h3>
-                                <ul>
-                                    <li><i class="fa fa-location-arrow"></i> Po. Ind. C/ Cueva de la Viera 29200 Antequera (M&aacute;laga)</li>
-                                    <li><i class="fa fa-phone"></i> +34 951 90 20 12 <br></li>
-                                    <li><i class="fa fa-envelope"></i> info@extralum.es</li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                    </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </section>
         <!-- end service-single-section -->
         
+        
         <?php include('assets/include/footer.php'); ?>
         
     </div>
     <!-- end of page-wrapper -->
+
+
 
     <!-- All JavaScript files
     ================================================== -->
@@ -154,6 +130,3 @@ include('assets/include/config.php');
     <script src="assets/js/script.js"></script>
 </body>
 </html>
-<?php
-close_connection($conn);
-?>
